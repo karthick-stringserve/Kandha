@@ -1,71 +1,103 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
-<head> 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carolina</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Carolina Header</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="icon" type="image/X-icon" href="images/favicon.svg">
 </head>
 
 <body>
 
     <header>
         <div class="container">
-            <div class="row top-header">
-                <div class="col-6 top-header-left-content">
-                    <div class="help">
-                        <p><a href="#">HELP</a></p>
-                    </div>
-                    <div class="contact-us">
-                        <img src="images/message-icon.svg">
-                        <p><a href="#">contact us</a></p>
-                    </div>
-                    <div class="phone">
-                        <img src="images/phone.svg">
-                        <p><a href="tel:1.800.334.5551">1.800.334.5551</a></p>
-                    </div>
-                </div>
+            <div class="row ca-top-header">
+                <div class="col-6 ca-top-header-left-content">
 
-                <div class="col-6 top-header-right-content">
-                    <p><a href="#">REDEEM VOUCHER</a></p>
-                    <p><a href="#">CAROLINA SCIENCE ONLINE</a></p>
-                    <p><a href="#">MY ACCOUNT</a></p>
-                </div>
-            </div>
-
-            <div class="row bottom-header">
-                <div class="col-3 logo">
-                    <img src="images/carolina-logo.svg">
-                </div>
-                <div class="col-9 logo-right-content">
-                    <ul class="email">
-                        <li class="email">
-                            <input type="text" id="Search" name="Search" placeholder="Search by keyword or Item #">
+                    <ul class="ca-desktop p-0 m-0">
+                        <li class="ca-help">
+                            <a href="#">HELP</a>
                         </li>
-                        <li class="sumbit">
-                            <input type="submit" value="Submit">
+                        <li class="ca-contact-us">
+                            <a href="#">contact us</a>
+                        </li>
+                        <li class="ca-phone">
+                            <a href="tel:1.800.334.5551"><span>1.800.334.5551</span></a>
                         </li>
                     </ul>
-                    <div class="cart-button">
-                        <a class="btn" href="#"><img src="images/cart-icon.svg">CART</a>
-                        <a class="btn" href="#"><img src="images/sign-in-icon.svg">SIGN IN</a>
-                    </div>
+
+                    <ul class="ca-mobile p-0 m-0 d-lg-none">
+                        <li class="ca-phone">
+                            <a href="tel:1.800.334.5551"></a>
+                        </li>
+                        <li class="ca-cart">
+                            <a href="#"></a>
+                        </li>
+                        <li class="ca-sign-in">
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col-6 ca-top-header-right-content">
+                    <ul class="d-flex p-0 m-0">
+                        <li><a href="#">REDEEM VOUCHER</a></li>
+                        <li><a href="#">CAROLINA SCIENCE ONLINE</a></li>
+                        <li><a href="#">MY ACCOUNT</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row ca-bottom-header">
+                <div class="col-3 ca-logo">
+                    <a href="https://www.carolina.com/">
+                        <img src="images/carolina-logo.svg" alt="carolina-logo">
+                    </a>
+                </div>
+                <div class="col-9 ca-logo-right-content">
+                    <form id="mainSearchForm" formid="mainSearchForm" method="get" class="ca-Search-form" action="/browse/product-search-results" requiressessionconfirmation="false" aria-label="Search" data-hs-cf-bound="true">
+                        <ul class="ca-Search-outer">
+                            <li class="ca-Search">
+                                <input type="text" id="Search" name="Search" placeholder="Search by keyword or Item #">
+                            </li>
+                            <li class="ca-sumbit">
+                                <input type="submit" value="Submit">
+                            </li>
+                        </ul>
+                    </form> 
+                    <ul class="ca-cart-button p-0 m-0">
+                        <li>
+                            <a class="btn" href="#"><img src="images/cart-icon.svg" alt="cart-icon">CART</a>
+                        </li>
+                        <li>
+                            <a class="btn" href="#"><img src="images/sign-in-icon.svg" alt="sign-in-icon">SIGN IN</a>  
+                        </li>     
+                    </ul>
                 </div>
 
             </div>
 
-            <div class="row mega-menu-container">
+            <div class="row ca-mega-menu-container">
                 <div class="col-12">
                     <nav>   
                         
-                        <div class="nav-mobile">Menu</div>
+                        <div class="ca-nav-mobile"></div>
+                        
+                        <ul class="ca-mobil-menu p-0 m-0 d-lg-none">
+                            <li><a href="#">REDEEM VOUCHER</a></li>
+                            <li><a href="#">CAROLINA SCIENCE ONLINE</a></li>
+                            <li><a href="#">MY ACCOUNT</a></li>
+                            <li><a href="#">SHOP PRODUCTS</a></li>
+                        </ul>
 
-                        <ul class="nav-list main-menu nav-menu-list">
-                            <li class="main-menu-item menu-item-even"><a class="menu-link main-menu-link" href="#">SHOP
+                        <ul class="ca-nav-list main-menu nav-menu-list">
+                            <li class="main-menu-item menu-item-even"><a class="menu-link ca-main-menu-link" href="#">SHOP
                                     K-COLLEGE</a>
                                 <span class="nav-click"><i class="fa fa-bars"></i></span>
                                 <ul class="sub-menu menu-odd">
@@ -73,118 +105,158 @@
                                         <div class="row">
                                             <div class="col-6">
                                                 <h6>Shop by product</h6>
-                                                <div class="grid-box">
-                                                    <a href="#" class="grid-item">
-                                                        <p>Biotechnology</p>
-                                                        <img src="images/biotechnology.svg">
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>Chemistry</p>
-                                                        <img src="images/chemistry.svg">
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>e-Learning Resources</p>
-                                                        <img src="images/elearning.svg">
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>Lab Supplies & Equipment</p>
-                                                        <img src="images/lab-supplies.svg">
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>Life Science</p>
-                                                        <img src="images/life-science.svg">
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>Living Organisms</p>
-                                                        <img src="images/living-organisms.svg">
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>Microscopes & Optics</p>
-                                                        <img src="images/microscopes.svg">
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>Physical & Earth Science</p>
-                                                        <img src="images/earth-science.svg">
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>Preserved Specimens</p>
-                                                        <img src="images/preserved.svg">
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>Science At Home</p>
-                                                        <img src="images/science-home.svg">
-                                                    </a>
-                                                </div>
+                                                <ul class="ca-grid-box p-0 m-0">
+                                                    <li class="ca-grid-item">
+                                                        <a href="#">
+                                                            <p>Biotechnology</p>
+                                                            <img src="images/biotechnology.svg" alt="biotechnology">
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#">
+                                                            <p>Chemistry</p>
+                                                            <img src="images/chemistry.svg" alt="chemistry">
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#">
+                                                            <p>e-Learning Resources</p>
+                                                            <img src="images/elearning.svg" alt="elearning">
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#">
+                                                            <p>Lab Supplies & Equipment</p>
+                                                            <img src="images/lab-supplies.svg" alt="lab-supplies">
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#">
+                                                            <p>Life Science</p>
+                                                            <img src="images/life-science.svg" alt="life-science">
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#">
+                                                            <p>Living Organisms</p>
+                                                            <img src="images/living-organisms.svg" alt="living-organisms">
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#">
+                                                            <p>Microscopes & Optics</p>
+                                                            <img src="images/microscopes.svg" alt="microscopes">
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#">
+                                                            <p>Physical & Earth Science</p>
+                                                            <img src="images/earth-science.svg" alt="earth-science">
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#">
+                                                            <p>Preserved Specimens</p>
+                                                            <img src="images/preserved.svg" alt="preserved">
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#">
+                                                            <p>Science At Home</p>
+                                                            <img src="images/science-home.svg" alt="science-home">
+                                                        </a>
+                                                    </li>
+                                                </ul>
                                             </div>
                                             <div class="col-6">
-                                                <div class="Shop-by-grade">
+                                                <div class="ca-Shop-by-grade">
                                                     <h6>Shop by grade</h6>
-                                                    <div class="grid-box">
-                                                        <a href="#" class="grid-item image">
-                                                            <p>Elementary School</p>
-                                                            <img src="images/elementary-science.png">
-                                                        </a>
-                                                        <a href="#" class="grid-item image">
-                                                            <p>Middle School</p>
-                                                            <img src="images/middle-school-science.png">
-                                                        </a>
-                                                        <a href="#" class="grid-item image">
-                                                            <p>High School</p>
-                                                            <img src="images/high-school-science.png">
-                                                        </a>
-                                                        <a href="#" class="grid-item image">
-                                                            <p>College</p>
-                                                            <img src="images/college.png">
-                                                        </a>
-                                                        <a href="#" class="grid-item image col-grid-span">
-                                                            <div class="title">
-                                                                <h6>New Products</h6>
-                                                                <p>View our newest products<br> for your classroom or
-                                                                    lab.</p>
-                                                            </div>
-                                                            <div class="inner-image">
-                                                                <img src="images/microscope-png.png">
-                                                                <img src="images/human-body.jpg">
-                                                            </div>
-                                                        </a>
-                                                    </div>
+                                                    <ul class="ca-grid-box p-0 m-0">
+                                                        <li class="ca-grid-item image">
+                                                            <a href="#">
+                                                                <p>Elementary School</p>
+                                                                <img src="images/elementary-science.png" alt="elementary-science">
+                                                            </a>
+                                                        </li>
+                                                        <li class="ca-grid-item image">
+                                                            <a href="#">
+                                                                <p>Middle School</p>
+                                                                <img src="images/middle-school-science.png" alt="middle-school-science">
+                                                            </a>
+                                                        </li>
+                                                        <li class="ca-grid-item image">
+                                                            <a href="#">
+                                                                <p>High School</p>
+                                                                <img src="images/high-school-science.png" alt="high-school-science">
+                                                            </a>
+                                                        </li>
+                                                        <li class="ca-grid-item image">
+                                                            <a href="#">
+                                                                <p>College</p>
+                                                                <img src="images/college.png" alt="college">
+                                                            </a>
+                                                        </li>
+                                                        <li class="ca-grid-item image col-grid-span">
+                                                            <a href="#">
+                                                                <div class="title">
+                                                                    <h6>New Products</h6>
+                                                                    <p>View our newest products<br> for your classroom or
+                                                                        lab.</p>
+                                                                </div>
+                                                                <div class="inner-image">
+                                                                    <img src="images/microscope-png.png" alt="microscope-png">
+                                                                    <img src="images/human-body.jpg" alt="human-body">
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
                                                 </div>
-                                                <div class="Kindergarten-College-Programs sub-title">
+                                                <div class="ca-Kindergarten-College-Programs sub-title">
                                                     <h6>Kindergarten through College Programs</h6>
-                                                    <div class="grid-box">
-                                                        <a href="#" class="grid-item image Kindergarten">
-                                                            <p>K-5</p>
-                                                            <img src="images/K-5.png">
-                                                        </a>
-                                                        <a href="#" class="grid-item image Kindergarten">
-                                                            <p>K-8</p>
-                                                            <img src="images/K-8.png">
-                                                        </a>
-                                                        <a href="#" class="grid-item image Kindergarten">
-                                                            <p>6-12</p>
-                                                            <img src="images/6-12.png">
-                                                        </a>
-                                                        <a href="#" class="grid-item image Kindergarten">
-                                                            <p>HS-College</p>
-                                                            <img src="images/HS-college.png">
-                                                        </a>
-                                                        <a href="#" class="grid-item image col-grid-span Kindergarten">
-                                                            <div class="title kit-image">
-                                                                <img src="images/kits-3D.jpg">
-                                                                <p>NGSS and phenomena-based learning</p>
-                                                            </div>
-                                                            <div class="inner-image">
-                                                                <img src="images/u110.jpg">
-                                                            </div>
-                                                        </a>
-                                                    </div>
+                                                    <ul class="ca-grid-box p-0 m-0">
+                                                        <li class="ca-grid-item image Kindergarten">
+                                                            <a href="#">
+                                                                <p>K-5</p>
+                                                                <img src="images/K-5.png" alt="K-5">
+                                                            </a>
+                                                        </li>
+                                                        <li class="ca-grid-item image Kindergarten">
+                                                            <a href="#">
+                                                                <p>K-8</p>
+                                                                <img src="images/K-8.png" alt="K-8">
+                                                            </a>
+                                                        </li>
+                                                        <li class="ca-grid-item image Kindergarten">
+                                                            <a href="#">
+                                                                <p>6-12</p>
+                                                                <img src="images/6-12.png" alt="6-12">
+                                                            </a>
+                                                        </li>
+                                                        <li class="ca-grid-item image Kindergarten">
+                                                            <a href="#">
+                                                                <p>HS-College</p>
+                                                                <img src="images/HS-college.png" alt="HS-college">
+                                                            </a>
+                                                        </li>
+                                                        <li class="ca-grid-item image col-grid-span Kindergarten">
+                                                            <a href="#">
+                                                                <div class="title kit-image">
+                                                                    <img src="images/kits-3D.jpg" alt="kits-3D">
+                                                                    <p>NGSS and phenomena-based learning</p>
+                                                                </div>
+                                                                <div class="inner-image">
+                                                                    <img src="images/u110.jpg" alt="u110">
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </div>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="main-menu-item menu-item-even"><a class="menu-link main-menu-link" href="#">IDEAS
+                            <li class="main-menu-item menu-item-even"><a class="menu-link ca-main-menu-link" href="#">IDEAS
                                     AND ACTIVITIES</a>
                                 <span class="nav-click"><i class="fa fa-bars"></i></span>
                                 <ul class="sub-menu menu-odd">
@@ -192,74 +264,105 @@
                                         <div class="row">
                                             <div class="col-6">
                                                 <h6>Ideas and Activities</h6>
-                                                <div class="grid-box">
-                                                    <a href="#" class="grid-item">
-                                                        <p>Classroom Activities</p>
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>Lab Materials Shopping Lists</p>
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>Dissection Resources</p>
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>Buying Guides</p>
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>NGSS Resources</p>
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>Living Care Guides</p>
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>Workshops and Webinars</p>
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>Infographics</p>
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>LabSkills</p>
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>Video Center</p>
-                                                    </a>
-                                                </div>
+                                                <ul class="ca-grid-box p-0 m-0">
+                                                    <li class="ca-grid-item">
+                                                        <a href="#">
+                                                            <p>Classroom Activities</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#">
+                                                            <p>Lab Materials Shopping Lists</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#">
+                                                            <p>Dissection Resources</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#">
+                                                            <p>Buying Guides</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#">
+                                                            <p>NGSS Resources</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#">
+                                                            <p>Living Care Guides</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#">
+                                                            <p>Workshops and Webinars</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#">
+                                                            <p>Infographics</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#">
+                                                            <p>LabSkills</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#">
+                                                            <p>Video Center</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                            <div class="col-6 Browse-by-subject">
+                                            <div class="col-6 ca-Browse-by-subject">
                                                 <h6>Browse by subject</h6>
-                                                <div class="grid-box">
-                                                    <a href="#" class="grid-item image">
-                                                        <p>Chemistry</p>
-                                                        <img src="images/chemistry.png">
-                                                    </a>
-                                                    <a href="#" class="grid-item image">
-                                                        <p>Earth, Space and<br>Environmental</p>
-                                                        <img src="images/environmental-science.png">
-                                                    </a>
-                                                    <a href="#" class="grid-item image">
-                                                        <p>Life Science</p>
-                                                        <img src="images/life-science.png">
-                                                    </a>
-                                                    <a href="#" class="grid-item image">
-                                                        <p>Interdisciplinary</p>
-                                                        <img src="images/interdisciplinary.png">
-                                                    </a>
-                                                    <a href="#" class="grid-item image">
-                                                        <p>Advanced Placement</p>
-                                                        <img src="images/advanced-placement.png">
-                                                    </a>
-                                                    <a href="#" class="grid-item image">
-                                                        <p>CTE</p>
-                                                        <img src="images/cte.png">
-                                                    </a>
-
-                                                </div>
+                                                <ul class="ca-grid-box p-0 m-0">
+                                                    <li class="ca-grid-item image">
+                                                        <a href="#">
+                                                            <p>Chemistry</p>
+                                                            <img src="images/chemistry.png" alt="chemistry">
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item image">
+                                                        <a href="#">
+                                                            <p>Earth, Space and<br>Environmental</p>
+                                                            <img src="images/environmental-science.png" alt="environmental-science">
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item image">
+                                                        <a href="#">
+                                                            <p>Life Science</p>
+                                                            <img src="images/life-science.png" alt="life-science">
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item image">
+                                                        <a href="#">
+                                                            <p>Interdisciplinary</p>
+                                                            <img src="images/interdisciplinary.png" alt="interdisciplinary">
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item image">
+                                                        <a href="#">
+                                                            <p>Advanced Placement</p>
+                                                            <img src="images/advanced-placement.png" alt="advanced-placement">
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item image">
+                                                        <a href="#">
+                                                            <p>CTE</p>
+                                                            <img src="images/cte.png" alt="cte">
+                                                        </a>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="main-menu-item menu-item-even"><a class="menu-link main-menu-link"
+                            <li class="main-menu-item menu-item-even"><a class="menu-link ca-main-menu-link"
                                     href="#">SCIENCE KITS</a>
                                 <span class="nav-click"><i class="fa fa-bars"></i></span>
                                 <ul class="sub-menu menu-odd">
@@ -267,30 +370,42 @@
                                         <div class="row">
                                             <div class="col-6">
                                                 <h6>Science Kits</h6>
-                                                <div class="grid-box">
-                                                    <a href="#" class="grid-item">
-                                                        <p>Shop Kits</p>
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>Design Your<br>College Distance<br>ED Labs</p>
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>Developed by<br>Scientists and<br>Teachers</p>
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>Pacing Guides for<br>3D Teaching</p>
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>State Standards</p>
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>What’s In A Kit?</p>
-                                                    </a>
-                                                </div>
+                                                <ul class="ca-grid-box p-0 m-0">
+                                                    <li class="ca-grid-item">
+                                                        <a href="#" >
+                                                            <p>Shop Kits</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#">
+                                                            <p>Design Your<br>College Distance<br>ED Labs</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#">
+                                                            <p>Developed by<br>Scientists and<br>Teachers</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#" class="ca-grid-item">
+                                                            <p>Pacing Guides for<br>3D Teaching</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#" class="ca-grid-item">
+                                                            <p>State Standards</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#" class="ca-grid-item">
+                                                            <p>What’s In A Kit?</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
                                             </div>
                                             <div class="col-6">
-                                                <div class="full-box grid-item">
-                                                    <div class="full-box-content">
+                                                <ul class="ca-full-box ca-grid-item">
+                                                    <li class="ca-full-box-content">
                                                         <h5>Find Your Perfect Kit</h5>
                                                         <ul>
                                                             <li>Developed by (an interdisciplinary team of) scientist
@@ -300,19 +415,18 @@
                                                             <li>Engaging for your students (because we start with
                                                                 real-world phenomenon)</li>
                                                         </ul>
-                                                    </div>
-                                                    <div class="full-box-image">
-                                                        <img src="images/u110.jpg">
-                                                        <img src="images/fine-Perfect-Kit.png">
-                                                    </div>
-                                                </div>
-
+                                                    </li>
+                                                    <li class="ca-full-box-image">
+                                                        <img src="images/u110.jpg" alt="u110">
+                                                        <img src="images/fine-Perfect-Kit.png" alt="fine-Perfect-Kit">
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="main-menu-item menu-item-even"><a class="menu-link main-menu-link"
+                            <li class="main-menu-item menu-item-even"><a class="menu-link ca-main-menu-link"
                                     href="#">PURCHASING HELP</a>
                                 <span class="nav-click"><i class="fa fa-bars"></i></span>
                                 <ul class="sub-menu menu-odd">
@@ -320,46 +434,58 @@
                                         <div class="row">
                                             <div class="col-6">
                                                 <h6>Purchasing help</h6>
-                                                <div class="grid-box">
-                                                    <a href="#" class="grid-item">
-                                                        <p>Get A Quote</p>
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>ESSER Funding</p>
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>Contract Accounts</p>
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>Quick Order</p>
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>Punchout</p>
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>Our Catalog</p>
-                                                    </a>
-                                                </div>
+                                                <ul class="ca-grid-box p-0 m-0">
+                                                    <li class="ca-grid-item">
+                                                        <a href="#">
+                                                            <p>Get A Quote</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#" class="ca-grid-item">
+                                                            <p>ESSER Funding</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#" class="ca-grid-item">
+                                                            <p>Contract Accounts</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#" class="ca-grid-item">
+                                                            <p>Quick Order</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#" class="ca-grid-item">
+                                                            <p>Punchout</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#" class="ca-grid-item">
+                                                            <p>Our Catalog</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
                                             </div>
                                             <div class="col-6">
-                                                <div class="side-box grid-item">
-                                                    <div class="side-box-content">
+                                                <ul class="ca-side-box ca-grid-item">
+                                                    <li class="ca-side-box-content">
                                                         <h5>Get Help Now</h5>
                                                         <p>Need help? Need technical assistance? Looking for a
                                                             particular product? Need help placing an order or
                                                             checkingthe status of an order?We are here to help.</p>
-                                                    </div>
-                                                    <div class="side-box-image">
-                                                        <img src="images/customer-support.png">
-                                                    </div>
-                                                </div>
+                                                    </li>
+                                                    <li class="ca-side-box-image">
+                                                        <img src="images/customer-support.png" alt="customer-support">
+                                                    </li>
+                                                </ul>
 
                                             </div>
                                         </div>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="main-menu-item menu-item-even"><a class="menu-link main-menu-link"
+                            <li class="main-menu-item menu-item-even"><a class="menu-link ca-main-menu-link"
                                     href="#">SAFETY AND SUPPORT</a>
                                 <span class="nav-click"><i class="fa fa-bars"></i></span>
                                 <ul class="sub-menu menu-odd">
@@ -367,40 +493,51 @@
                                         <div class="row">
                                             <div class="col-6">
                                                 <h6>Safety and Support</h6>
-                                                <div class="grid-box">
-                                                    <a href="#" class="grid-item">
-                                                        <p>Safety Data Sheets</p>
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>Living Permits</p>
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>Living Care Guides</p>
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>Buying Guides</p>
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>Safety Agreements</p>
-                                                    </a>
-                                                    <a href="#" class="grid-item">
-                                                        <p>Lab Materials<br>Shopping Lists</p>
-                                                    </a>
-                                                </div>
+                                                <ul class="ca-grid-box p-0 m-0">
+                                                    <li class="ca-grid-item">
+                                                        <a href="#">
+                                                            <p>Safety Data Sheets</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#">
+                                                            <p>Living Permits</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#">
+                                                            <p>Living Care Guides</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#">
+                                                            <p>Buying Guides</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#">
+                                                            <p>Safety Agreements</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="ca-grid-item">
+                                                        <a href="#">
+                                                            <p>Lab Materials<br>Shopping Lists</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
                                             </div>
                                             <div class="col-6">
-                                                <div class="side-box grid-item">
-                                                    <div class="side-box-content">
+                                                <ul class="ca-side-box ca-grid-item">
+                                                    <li class="ca-side-box-content">
                                                         <h5>Get Help Now</h5>
                                                         <p>Need help? Need technical assistance? Looking for a
                                                             particular product? Need help placing an order or
                                                             checkingthe status of an order?We are here to help.</p>
-                                                    </div>
-                                                    <div class="side-box-image">
-                                                        <img src="images/customer-support-2.png">
-                                                    </div>
-                                                </div>
-
+                                                    </li>
+                                                    <li class="ca-side-box-image">
+                                                        <img src="images/customer-support-2.png" alt="customer-support-2">
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </li>
@@ -414,35 +551,31 @@
         </div>
     </header>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 
     <script>
 
         // Append the mobile icon nav
-        $('.nav').append($('<div class="nav-mobile">Menu <i class="fa fa-bars"></i></div>'));
+        $('.nav').append($('<div class="ca-nav-mobile">Menu <i class="fa fa-bars"></i></div>'));
 
         // Add a <span> to every .nav-item that has a <ul> inside
         $('.nav-item').has('ul').prepend('<span class="nav-click"> Menu<i class="fa fa-bars"></i></span>');
 
-        jQuery('.nav-mobile').click(function ($) {
-            if (jQuery('.nav-list').is(':hidden')) {
-                jQuery('.nav-mobile').addClass("open");
-                jQuery('.nav-list').slideDown("slow", function () {
+        jQuery('.ca-nav-mobile').click(function ($) {
+            if (jQuery('.ca-nav-list').is(':hidden')) {
+                jQuery('.ca-nav-mobile').addClass("open");
+                jQuery('.ca-nav-list').slideDown("slow", function () {
                 });
             } else {
-                jQuery('.nav-mobile').removeClass("open");
+                jQuery('.ca-nav-mobile').removeClass("open");
                 jQuery('#lk').removeClass("vis");
-                jQuery('.nav-list').slideUp("slow", function () {
+                jQuery('.ca-nav-list').slideUp("slow", function () {
                 });
             }
         });
 
-        jQuery('.nav-list').on('click', '.nav-click', function () {
+        jQuery('.ca-nav-list').on('click', '.nav-click', function () {
 
             // Toggle the nested nav
             /*$(this).siblings('.sub-menu').toggle();*/
@@ -459,6 +592,58 @@
             jQuery(this).children('.nav-arrow').toggleClass('nav-rotate');
 
         });
+
+
+
+
+        
+        document.addEventListener("DOMContentLoaded", function() {
+        // Get all main menu items
+        const mainMenuItems = document.querySelectorAll('.main-menu-item');
+
+        // Function to remove 'active' class from all main menu items
+        function removeActiveClass() {
+            mainMenuItems.forEach(item => {
+                item.classList.remove('active');
+                item.querySelector('.menu-link').classList.remove('current-menu-parent');
+                if (item.querySelector('.sub-menu')) {
+                    item.querySelector('.menu-link').classList.remove('menu-item-has-children');
+                }
+            });
+        }
+
+        // Add event listeners to each main menu item
+        mainMenuItems.forEach(item => {
+            item.addEventListener('click', function() {
+                // Remove 'active' class from all main menu items
+                removeActiveClass();
+                // Add 'active' class to the clicked main menu item
+                this.classList.add('active');
+                // Add 'current-menu-parent' class to the clicked main menu item link
+                this.querySelector('.menu-link').classList.add('current-menu-parent');
+            });
+
+            // Get all submenu items for each main menu item
+            const submenuItems = item.querySelectorAll('.sub-menu .sub-menu-item');
+
+            // Add event listeners to each submenu item
+            submenuItems.forEach(subItem => {
+                subItem.addEventListener('click', function(event) {
+                    // Prevent the default action of the link
+                    event.preventDefault();
+                    // Remove 'active' class from all main menu items
+                    removeActiveClass();
+                    // Add 'active' class to the parent main menu item of the clicked submenu item
+                    item.classList.add('active');
+                    // Add 'current-menu-parent' class to the parent main menu item link
+                    item.querySelector('.menu-link').classList.add('current-menu-parent');
+                    // Add 'menu-item-has-children' class to the parent main menu item link
+                    item.querySelector('.menu-link').classList.add('menu-item-has-children');
+                });
+            });
+        });
+    });
+        
     </script>
 
 </body>
